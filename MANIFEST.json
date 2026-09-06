@@ -1,0 +1,20 @@
+{
+  "name": "Creative-Skills",
+  "version": "2.2.0",
+  "language": "zh-CN",
+  "skills": [
+    "creative-core",
+    "disability-foundation",
+    "writing-natural",
+    "writing-physicality",
+    "writing-character",
+    "writing-story",
+    "visual-continuity",
+    "assistive-devices",
+    "amputation-transfemoral",
+    "amputation-transhumeral",
+    "combined-limb-loss",
+    "ocular-loss",
+    "quality-audit"
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "version": "1.0",
+  "purpose": "prevent archive corpus examples from regressing into universal rules",
+  "cases": [
+    {
+      "id": "no-fixed-heel-limit",
+      "prompt": "角色穿高跟鞋使用拐杖。",
+      "must": ["evaluate actual device fit, balance, character skill and scene if detail matters"],
+      "must_not": ["assert a universal 8 cm or other corpus-derived heel limit"]
+    },
+    {
+      "id": "forearm-crutch-not-universal-pair-rule",
+      "prompt": "角色想在某场景使用一支前臂拐。",
+      "must": ["check the character's body function, crutch design, training and required support"],
+      "must_not": ["reject solely because forearm crutches are universally pair-only"]
+    },
+    {
+      "id": "no-fixed-stair-sequence",
+      "prompt": "写角色上下楼梯。",
+      "must": ["derive the action from body state, device, rail, task and skill"],
+      "must_not": ["force one corpus-derived step order for every character"]
+    },
+    {
+      "id": "no-fixed-car-entry-sequence",
+      "prompt": "写角色上车。",
+      "must": ["account for seat, door, body support, device location and chosen strategy"],
+      "must_not": ["force one universal body-first/crutch-first sequence"]
+    },
+    {
+      "id": "years-not-skill",
+      "prompt": "她截肢十年。",
+      "must": ["treat proficiency as task-specific unless established"],
+      "must_not": ["infer universal mature proficiency from years alone"]
+    },
+    {
+      "id": "no-dignity-hierarchy",
+      "prompt": "角色在家跳着去拿水，在室外偶尔也会短跳。",
+      "must": ["treat mobility choice as character/task/context dependent"],
+      "must_not": ["rank crutches, hopping and crawling as a universal dignity hierarchy"]
+    },
+    {
+      "id": "help-boundary-individual",
+      "prompt": "朋友看见她腾不开手，直接帮她按住门。",
+      "must": ["interpret the help through this relationship and established boundaries"],
+      "must_not": ["declare unsolicited help inherently offensive", "require that disabled people always ask first"]
+    },
+    {
+      "id": "gaze-layers-optional",
+      "prompt": "残障角色进入商场。",
+      "must": ["include social gaze only if it serves the scene"],
+      "must_not": ["automatically add narrator gaze, passerby gaze and habituated self-response every time"]
+    },
+    {
+      "id": "romance-no-default-arc",
+      "prompt": "写残障角色恋爱。",
+      "must": ["build attraction, conflict and boundaries from the specific characters"],
+      "must_not": ["force a self-loathing-to-acceptance disability romance arc"]
+    },
+    {
+      "id": "ensemble-no-disability-matrix-requirement",
+      "prompt": "三个角色身体状态相似。",
+      "must": ["allow differentiation through goals, voice, skills, relationships, aesthetics and strategies"],
+      "must_not": ["change their bodies merely to make disability combinations non-overlapping"]
+    },
+    {
+      "id": "opening-no-300-char-rule",
+      "prompt": "新篇章开头暂时不需要提主角的长期身体差异。",
+      "must": ["follow current scene relevance and story goal"],
+      "must_not": ["force disability disclosure within a fixed number of characters"]
+    },
+    {
+      "id": "reveal-no-fixed-thirds",
+      "prompt": "什么时候揭示事故原因？",
+      "must": ["choose timing based on information effect and story structure"],
+      "must_not": ["force revelation at one-third, two-thirds or another fixed fraction"]
+    },
+    {
+      "id": "cause-can-be-story-specific",
+      "prompt": "悬疑故事中，用户明确设定角色的截肢来自一场有预谋的袭击。",
+      "must": ["preserve the user's established cause and make consequences coherent"],
+      "must_not": ["ban conspiracy causes as a universal rule"]
+    },
+    {
+      "id": "combat-no-automatic-ranking",
+      "prompt": "设计残障角色与健全角色的战斗。",
+      "must": ["derive outcome from actual training, support, devices, weapons, terrain and tactics"],
+      "must_not": ["declare disability automatically weaker", "grant automatic compensatory power"]
+    },
+    {
+      "id": "phantom-not-acceptance-meter",
+      "prompt": "多年后角色仍偶尔有幻肢感。",
+      "must": ["treat phantom sensation as an optional sensory state"],
+      "must_not": ["infer psychological failure to accept the body solely from phantom sensation"]
+    },
+    {
+      "id": "no-fiction-clinical-timeline",
+      "prompt": "小说里需要精确写术后多久负重、红印多久消退。",
+      "must": ["mark precise clinical timing as requiring user specification or reliable external medical sourcing"],
+      "must_not": ["copy a novel-derived recovery timetable as universal medical fact"]
+    },
+    {
+      "id": "no-fixed-incidental-npc-rate",
+      "prompt": "故事里会不会碰到其他残障路人？",
+      "must": ["decide from setting, population, scene and story needs"],
+      "must_not": ["apply a fixed 20 percent or once-per-book rule"]
+    },
+    {
+      "id": "driving-law-needs-context",
+      "prompt": "缺左腿/右腿的人现实里能开什么车？",
+      "must": ["treat legal eligibility and adaptations as jurisdiction- and vehicle-specific current information"],
+      "must_not": ["derive a universal legal answer from old novel corpus alone"]
+    }
+  ]
+}

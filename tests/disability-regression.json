@@ -1,0 +1,279 @@
+{
+  "version": "2.1",
+  "purpose": "cross-skill disability, clothing, mobility and visual continuity regressions",
+  "cases": [
+    {
+      "id": "presence-vs-function-paralysis",
+      "prompt": "年轻女性双腿完整，但从腰以下无法主动运动，穿连裤袜坐轮椅。",
+      "must": [
+        "both natural legs remain present",
+        "both pantyhose leg tubes are anatomically supported",
+        "mobility impairment is represented as function, not limb absence"
+      ],
+      "must_not": [
+        "empty trouser legs",
+        "amputation",
+        "missing feet"
+      ]
+    },
+    {
+      "id": "presence-vs-function-blind-eye",
+      "prompt": "左眼眼球完整，乳白浑浊并失明；右眼正常。",
+      "must": [
+        "left globe present",
+        "left vision absent",
+        "right eye normal"
+      ],
+      "must_not": [
+        "empty left socket",
+        "ocular prosthesis unless separately specified"
+      ]
+    },
+    {
+      "id": "transfemoral-clothing-endpoint",
+      "prompt": "右经股截肢，未穿假肢，穿长裤。",
+      "must": [
+        "right thigh residual limb present",
+        "fabric supported through residual thigh",
+        "unsupported trouser fabric begins after residual endpoint"
+      ],
+      "must_not": [
+        "natural right knee",
+        "trouser leg empty from hip"
+      ]
+    },
+    {
+      "id": "transhumeral-empty-sleeve",
+      "prompt": "左经肱截肢，穿长袖衬衫，没有上肢义肢。",
+      "must": [
+        "upper-arm residual segment supports sleeve",
+        "empty sleeve starts after residual endpoint"
+      ],
+      "must_not": [
+        "natural elbow",
+        "empty sleeve from shoulder"
+      ]
+    },
+    {
+      "id": "pantyhose-topology",
+      "prompt": "左腿缺失，角色穿一整件黑色连裤袜，左侧空袜筒折进短裙下。",
+      "must": [
+        "shared waist-and-hip section",
+        "left leg tube accounted for",
+        "folded/tucked unsupported tube"
+      ],
+      "must_not": [
+        "treat pantyhose as two unrelated stockings",
+        "extra anatomical leg"
+      ]
+    },
+    {
+      "id": "single-stocking-vs-pantyhose",
+      "prompt": "她只有右腿，右腿穿一只白色过膝袜。",
+      "must": [
+        "single independent stocking on right leg"
+      ],
+      "must_not": [
+        "invent a connected pantyhose waist",
+        "invent left leg"
+      ]
+    },
+    {
+      "id": "peg-leg-no-knee",
+      "prompt": "左经股残肢穿一条无膝关节刚性棍腿，末端是防滑垫。",
+      "must": [
+        "socket/attachment and rigid pylon",
+        "no knee articulation",
+        "terminal pad"
+      ],
+      "must_not": [
+        "natural knee",
+        "bending prosthetic knee",
+        "shoe unless specified"
+      ]
+    },
+    {
+      "id": "hop-vs-limp",
+      "prompt": "经股截肢角色没穿假肢也没拿拐杖，从床边快速到门口。",
+      "must": [
+        "select an explicit feasible mobility mode from character/environment state"
+      ],
+      "must_not": [
+        "use limp as automatic synonym for missing leg",
+        "teleport"
+      ]
+    },
+    {
+      "id": "crawl-contact-surfaces",
+      "prompt": "独腿角色的拐杖掉远了，她需要在地面移动去拿。",
+      "must": [
+        "identify actual contact/support surfaces",
+        "respect residual limb tolerance and hand availability"
+      ],
+      "must_not": [
+        "assume residual end safely weight-bears like a knee",
+        "restore missing limb"
+      ]
+    },
+    {
+      "id": "hand-occupancy",
+      "prompt": "右臂缺失、左手正拄单拐的角色要开一扇需要手柄操作的门。",
+      "must": [
+        "resolve support before freeing the left hand or use another strategy"
+      ],
+      "must_not": [
+        "left hand simultaneously bears on crutch and operates door without transition"
+      ]
+    },
+    {
+      "id": "ocular-prosthesis-continuity",
+      "prompt": "她把左义眼取下放进盒子，下一镜头去洗脸。",
+      "must": [
+        "left ocular prosthesis remains off unless explicitly reinserted",
+        "box/device location remains coherent"
+      ],
+      "must_not": [
+        "automatic prosthetic eye reappearance"
+      ]
+    },
+    {
+      "id": "wheelchair-not-equal-no-legs",
+      "prompt": "角色双腿完整但耐力差，长距离使用轮椅，家里可短距离站立。",
+      "must": [
+        "legs remain present",
+        "wheelchair is scene/task mobility choice",
+        "standing ability remains if locked"
+      ],
+      "must_not": [
+        "infer bilateral amputation",
+        "infer permanent inability to stand"
+      ]
+    },
+    {
+      "id": "mirror-side-lock",
+      "prompt": "角色左腿缺失，先画正面，再画镜中自拍。",
+      "must": [
+        "anatomical left remains the character's left across views"
+      ],
+      "must_not": [
+        "swap amputation to anatomical right because image is mirrored"
+      ]
+    },
+    {
+      "id": "congenital-no-surgery-assumption",
+      "prompt": "角色天生右手只有部分手掌结构。",
+      "must": [
+        "preserve specified congenital structure"
+      ],
+      "must_not": [
+        "automatic surgical scar",
+        "automatic phantom limb",
+        "invent traumatic amputation"
+      ]
+    },
+    {
+      "id": "phantom-not-load-bearing",
+      "prompt": "她感觉已经缺失的脚趾发痒。",
+      "must": [
+        "phantom sensation treated as perception"
+      ],
+      "must_not": [
+        "phantom foot physically supports body"
+      ]
+    },
+    {
+      "id": "device-location",
+      "prompt": "她把双拐放在车外后坐进车里，车开走。",
+      "must": [
+        "crutches remain outside unless someone moves them"
+      ],
+      "must_not": [
+        "crutches automatically appear inside car"
+      ]
+    },
+    {
+      "id": "multi-character-state",
+      "prompt": "A 左经股截肢，B 右经肱截肢，两人一起撑伞。",
+      "must": [
+        "keep A and B side/state records separate",
+        "assign hand/object occupancy per character"
+      ],
+      "must_not": [
+        "swap A/B missing sides",
+        "give B a natural right forearm"
+      ]
+    },
+    {
+      "id": "world-exception-boundary",
+      "prompt": "魔法义眼能看见但需要魔力，魔力耗尽后停止视觉。",
+      "must": [
+        "device vision exists only while powered",
+        "natural missing eye does not return"
+      ],
+      "must_not": [
+        "unlimited vision after power failure",
+        "silent regeneration"
+      ]
+    },
+    {
+      "id": "cosmetic-shell-present-eye",
+      "prompt": "右眼眼球存在且失明，正在摘美容义眼片。",
+      "must": [
+        "preserve present natural eye and absent vision",
+        "external shell separate from orbital implant"
+      ],
+      "must_not": [
+        "infer enucleation",
+        "remove entire eye with cosmetic shell"
+      ]
+    },
+    {
+      "id": "detailed-not-didactic",
+      "prompt": "写成年伴侣整理经股残肢上连裤袜的细致场景，人物喜欢这种身体美感。",
+      "must": [
+        "retain concrete sensory and clothing detail",
+        "preserve viewpoint and character wishes"
+      ],
+      "must_not": [
+        "mandatory shame-to-acceptance arc",
+        "erase requested detail in the name of naturalness",
+        "invent pain or scars"
+      ]
+    },
+    {
+      "id": "same-person-help-boundary",
+      "prompt": "角色请同事拿文件，却坚持自己讲方案。",
+      "must": [
+        "different decisions tied to different tasks"
+      ],
+      "must_not": [
+        "universal help refusal",
+        "narrator explains dignity after every gesture"
+      ]
+    },
+    {
+      "id": "phantom-not-acceptance-score",
+      "prompt": "早已接受身体的角色偶尔感觉缺失的脚存在，无痛且无明确诱因。",
+      "must": [
+        "keep subjective sensation distinct from actual support",
+        "preserve established psychological acceptance"
+      ],
+      "must_not": [
+        "infer emotional regression",
+        "invent pain, mandatory trigger or treatment"
+      ]
+    },
+    {
+      "id": "independent-image-prompts",
+      "prompt": "同一人物戴义眼和未戴义眼两张图，每条提示词将复制到独立新会话。",
+      "must": [
+        "each prompt contains necessary identity, side, structure and current device state",
+        "each prompt specifies clothing, pose and visual setting"
+      ],
+      "must_not": [
+        "depend on a shared preamble or previous image text",
+        "regenerate the absent natural eye"
+      ]
+    }
+  ]
+}
