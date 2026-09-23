@@ -5,7 +5,7 @@
 | “继续写这个角色” | Core + Write Natural；已有身体差异时加 Foundation；动作复杂时再加 Physicality；命中专项则叠加专项 |
 | “写她怎么洗澡/穿衣/走路/跳/爬/转移” | Core + Foundation + Write Natural + Write Physicality + 对应专项；出现器械时加 Aids |
 | “角色双腿还在但不能动/瘫痪” | Core + Foundation + Physicality；**不要**自动路由到截肢专项 |
-| “眼睛乳白、失明但眼球还在” | Core + Foundation + Ocular；锁定 `globe_present + vision_absent`，不要写成空眼窝 |
+| “眼睛乳白、失明但眼球还在” | Core + Foundation + Ocular；锁定 `GLOBE_STRUCTURE=intact + VISION=absent`，不要写成空眼窝 |
 | “写她和别人相处/恋爱/被帮助” | Core + Foundation + Write Natural + Write Character + 对应专项 |
 | “规划大篇章/案件/冒险” | Core + Write Story + Character；身体状态参与因果时加 Foundation/Physicality/专项 |
 | “画人设图/插画/漫画” | Core + Foundation + Visual + 对应专项 + Aids（若有器械） |

@@ -34,7 +34,7 @@ description: 创作总路由与角色状态引擎。用于身体差异、肢体�
 - `BODY_STATE.STRUCTURE`：天然结构存在/缺失、侧别、保留段、保留关节、终点；
 - `BODY_STATE.FUNCTION`：主动运动、承重、抓握、活动范围等能力；
 - `SENSATION_PROFILE`：只有已建立时才记录麻木、敏感、幻肢等；
-- `VISION_BASELINE`：每只眼的结构存在与视觉能力分开；
+- `VISION_BASELINE`：每只眼的结构存在与视觉能力分开；已设定的近视与矫正后能力也分别记录；
 - `PROSTHESIS_CAPABILITIES`：器械能力边界；
 - `WORLD_EXCEPTION`：魔法/科幻覆盖规则；
 - `CHARACTER_PROFILE`：性格、偏好、隐私/帮助边界；
@@ -45,7 +45,7 @@ description: 创作总路由与角色状态引擎。用于身体差异、肢体�
 ### SCENE：场景内可变化
 
 - `PROSTHESIS_STATE`：worn / off_nearby / off_elsewhere / damaged / maintenance；
-- `AID_STATE`：器械是否在用、由谁持有、放在哪里；
+- `AID_STATE`：器械及眼镜是否在用、由谁持有、放在哪里；
 - `MOBILITY_MODE`；
 - `SUPPORT_POINTS`；
 - `HAND_OCCUPANCY`；

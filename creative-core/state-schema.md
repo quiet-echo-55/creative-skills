@@ -21,10 +21,12 @@ LOCKED:
     left:
       globe_structure:  # intact / altered_or_partially_retained / absent / unknown
       vision:
+      correction_baseline:  # 可选：近视等已知状态及矫正后能力
       ocular_device:
     right:
       globe_structure:  # intact / altered_or_partially_retained / absent / unknown
       vision:
+      correction_baseline:
       ocular_device:
   PROSTHESIS_CAPABILITIES:
   TASK_SKILLS:
@@ -52,4 +54,5 @@ SCENE:
 - `CLOTHING_STATE` 建议同时记录衣物通道由天然肢体、残肢、假肢还是空气支撑。
 - `globe_structure` 不是布尔值：完整存在、结构改变/部分保留、整体缺失和未知分别记录；必要时附说明，不让“眼球存在/缺失”掩盖不同手术与美容义眼片的差异。
 - `ocular_device` 记录当前外观装置、义眼片或外部义眼等相关状态；它与天然眼球结构和视觉能力分开。
+- 高度近视若已设定，按每只仍有视觉的眼睛记录；眼镜戴上、摘下、损坏或放在何处属于 `SCENE.AID_STATE`，当前能看清什么按已知设定与场景推导。
 - `LOCKED` 表示无事件时不漂移，不代表人物永远不能训练、康复或改变偏好。有依据的长期变化应同步更新。
