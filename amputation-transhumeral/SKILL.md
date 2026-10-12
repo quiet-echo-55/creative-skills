@@ -1,6 +1,6 @@
 ---
 name: amputation-transhumeral
-version: 2.2.0
+version: 3.0.0
 description: 经肱／肘上截肢的写作与绘图专项。区分保留上臂与缺失天然肘、前臂、手，处理空袖、残肢辅助动作、义肢控制和手占用；不把经桡、肘离断、肩离断混用。
 ---
 

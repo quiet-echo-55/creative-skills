@@ -1,4 +1,19 @@
-# Build Info — Creative Skills 2.2
+# Build Info — Creative Skills 3.0 candidate
+
+- Work date: 2026-10-12
+- Candidate version: 3.0.0 (2.3 candidate plus consolidated methods and type registry)
+- Note: clean application to an available 2.2 context reconstruction was tested; full upstream checkout validation remains pending
+- Input repository: `quiet-echo-55/creative-skills`
+- Base commit: `806bc95d404fe9638e22ba56d92239cde767aa66`
+- Previous candidate: 2.3.0
+- Active skills: 13 (IDs unchanged)
+- Behavioral expectations: 118 (not an all-passed generation score)
+- Research and access boundaries: [research record](docs/DEVOTEE-RESEARCH.md)
+- Validation and actual trials: [review](tests/REVIEW-2.3.md)
+
+This records a reviewable candidate, not a claim that upstream has published this version. No original surveys, private community records, interview transcripts or historical novels are included. The original build provenance follows.
+
+## Original 2.2 provenance
 
 - Build date: 2026-09-06
 - Input artifact: user-supplied complete 2.1 ZIP

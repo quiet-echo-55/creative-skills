@@ -1,4 +1,4 @@
-# Creative Skills 2.2
+# Creative Skills 3.0
 
 用于中文小说、人物设定与可复制绘图提示词的 13 个组合技能。身体结构、残肢、残态、假肢、义眼、辅具、服装和动作保持一致；人物的语言、欲望和关系仍是具体的。
 
@@ -32,6 +32,27 @@
 | [quality-audit](quality-audit/SKILL.md) | 事实、连续性与阅读效果检查 |
 
 普通正文使用核心与自然写作，涉及身体才叠加基础、动作和命中专项；绘图任务使用核心、基础、视觉与命中专项。详细见 [调用速查](docs/ROUTING-CHEATSHEET.md)。
+
+## 慕残与身体审美取向
+
+明确面向相关成年受众时，按需读取 [受众与人物回应](writing-character/devotee-audience.md)、[身体关注的写法](writing-natural/body-attention-methods.md)及 [六个原创场景](writing-natural/devotee-examples.md)。区分作品取向、视角注意与角色意愿；用形态、动作、衣着、装置、关系、感知和浓度的可组合维度落实已知偏好，不把它们当作心理分类或身体模板。普通残疾人物任务不自动追加这种取向。
+
+[研究记录](docs/DEVOTEE-RESEARCH.md)列出原始研究、第一人称经验、阅读范围与代表性限制。此次改进没有中文受众普查或市场偏好数据，不用选择性样本推断所有人的性别、成因或喜好。
+
+## 3.0 收敛与创作增强
+
+保留 **13 个技能 ID**，明确职责唯一归属：Core 管状态与路由，Foundation 管身体事实与衣物，类型字典管简称与结构映射，Physicality 管动作资源，Devices 管辅具能力及失效事件，Natural 管可见残态和审美表达，Character 管个人选择与受众关注，Story 管后果与跨章因果，Audit 管验收。**默认只读取命中的主 Skill**；高难任务、故障事件和受众方法按需加载，不把所有参照材料塞进每次续写。
+
+- [截肢与残疾类型字典](disability-foundation/amputation-type-registry.md)：SAK、SAE、OOE、LBK、膝下、肘下、双侧及复合状态；不为每个缩写单开 Skill。
+- [任务资源不足与身体困难](writing-physicality/constraint-task-methods.md)：支点、手占用、双侧支撑、转移、窘迫与失败，允许替代方案和求助。
+- [辅具失效与物件位置](assistive-devices/failure-events.md)：拐杖、假肢、轮椅、外部义眼的不同故障机制与后续连续性。
+- [身体关注与动态残态](writing-natural/body-attention-methods.md)：整合静态、动态和状态转换，不设事故配额。
+- [受众与人物回应](writing-character/devotee-audience.md)：选择性创作取向、长期关系与角色自身意愿分离。
+- [3.0 设计与验证说明](docs/RELEASE-3.0.md)：基线、职责矩阵与可验证范围。
+
+## 2.3 研究改进
+
+保持 13 个技能 ID 与身体状态架构，新增按需参考、完整场景和 23 例行为期望。扩展持续身体关注、主动展示、具体回应、审美分歧与长期关系；审计同时检查用户要求是否得到充分呈现，以及修复是否保留所需细节。61 例本地案例与 57 例跨技能案例合计 118 例；静态校验不等于这些生成任务已全部通过。实际试用记录见 [2.3 评审](tests/REVIEW-2.3.md)。
 
 ## 写作要求与粗稿吸收
 [写作要求](writing-natural/writing-requirements.md)集中说明正文交付、细致身体描写、长期人物与文风复查。日常与感知、人物关系、故事方法按需读取，已包含具体执行方法和原创例句，不只留下原则摘要。

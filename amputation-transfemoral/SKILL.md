@@ -1,6 +1,6 @@
 ---
 name: amputation-transfemoral
-version: 2.2.0
+version: 3.0.0
 description: 经股／膝上截肢的写作与绘图专项。区分保留大腿与缺失天然膝、小腿、足，处理残肢终点、衣物、人工膝、坐姿和无假肢移动；不把膝离断、经胫或髋离断套成同一结构。
 ---
 
